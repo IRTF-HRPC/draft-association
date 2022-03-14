@@ -797,7 +797,7 @@ Lastly, the increasing shift towards closed and non-interoperable platforms in c
 Acknowledgements
 ================
 
-- Fred Baker, Jefsey, and Andrew Sullivan for work on Internet definitions.
+- Fred Baker and Jefsey for work on Internet definitions.
 
 - Stephane Bortzmeyer, ICNL, and Lisa Vermeer for several concrete text suggestions that found their way in this document.
 
