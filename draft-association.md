@@ -53,6 +53,8 @@ informative:
   RFC0001:
   RFC0155:
   RFC0903:
+  RFC1163:
+  RFC1164:
   RFC1211:
   RFC1771:
   RFC1930:
@@ -93,14 +95,6 @@ informative:
       - ins: P.N. Howard
     target: https://doi.org/10.1111/misr.12020
     seriesinfo: "Int Stud Rev (2013) 15 (1): 48-66."
-
-  UNSRFAA2012:
-    title: Report of the Special Rapporteur on the rights to freedom of peaceful assembly and of association
-    date: 2012
-    author:
-      - ins: Maina Kiai
-    target: http://freeassembly.net/wp-content/uploads/2013/10/A-HRC-20-27_en-annual-report-May-2012.pdf
-    seriesinfo: A/HRC/20/27
 
   APC:
     title: Freedom of assembly and association online in India, Malaysia and Pakistan. Trends, challenges and recommendations.
@@ -450,8 +444,13 @@ informative:
       - ins: Clément Voule
       - org: United Nations
      target: https://undocs.org/A/HRC/41/41
-     
-  
+
+  MeierHahn2015:
+     title: "Creating connectivity: trust, distrust and social microstructures at the core of the internet"
+     date: 2015
+     author:
+      - ins: Uta Meier-Hahn
+     target: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2587843
      
 --- abstract
 
@@ -736,6 +735,7 @@ However, WebRTC comes with many different configuration options, which can leave
     awareness. The potential privacy implications of this aspect of 
     WebRTC are well documented, and certain browsers have provided 
     options to limit its behavior.’ 
+
 {{AndersonGuarnieri}}
 
 Even though some multi-party video conferencing tools facilitate freedom of assembly and association, their own configuration might might pose concrete risks for those who use them. On the one hand WebRTC is providing resilient channels of communications, but on the other hand it also exposes information about those who are using the tool which might lead to increased surveillance, identification and the consequences that might be derived from that. This is especially concerning because the usage of a VPN does not protect against the exposure of IP addresses {{Crawford}}.
