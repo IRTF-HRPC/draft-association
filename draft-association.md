@@ -1,7 +1,8 @@
 ---
-title: Freedom of Association on the Internet
+title: Internet Protocols and the Human Rights to Freedom of Association and Assembly
+
 abbrev: FoA
-docname: draft-irtf-hrpc-association-10
+docname: draft-irtf-hrpc-association-11
 category: info
 
 ipr: trust200902
@@ -27,12 +28,6 @@ author:
        name: Niels ten Oever
        organization: University of Amsterdam
        email: mail@nielstenoever.net
-
--
-       ins: G. Perez de Acha
-       name: Gisela Perez de Acha
-       organization: Derechos Digitales
-       email: gisela@derechosdigitales.org
        
 -
        ins: S. Couture
@@ -797,6 +792,8 @@ Lastly, the increasing shift towards closed and non-interoperable platforms in c
 
 Acknowledgements
 ================
+
+- Gisela Perez de Acha for co-authoring the first versions of this document
 
 - Fred Baker and Jefsey for work on Internet definitions.
 
