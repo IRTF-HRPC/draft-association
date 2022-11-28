@@ -2,7 +2,7 @@
 title: Internet Protocols and the Human Rights to Freedom of Association and Assembly
 
 abbrev: FoA
-docname: draft-irtf-hrpc-association-11
+docname: draft-irtf-hrpc-association-12
 category: info
 
 ipr: trust200902
@@ -800,6 +800,9 @@ Acknowledgements
 - Nick Doty, Gurshabad Grover, an anonymous reviewer, ICNL, Lisa Vermeer, and Sandra Braman for full reviews.
 
 - The hrpc mailinglist at large for a very constructive discussion on a hard topic.
+
+- Efforts put in this document by Niels ten Oever were made possible through funding from the Ford Foundation, the Open Technology Fund, and the Dutch Research Council (NWO) through grant MVI.19.032 as part of the program 'Maatschappelijk Verantwoord Innoveren (MVI)'.
+
 
 Work Space
 ==========
