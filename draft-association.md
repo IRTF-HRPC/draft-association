@@ -2,7 +2,7 @@
 title: Internet Protocols and the Human Rights to Freedom of Association and Assembly
 
 abbrev: FoA
-docname: draft-irtf-hrpc-association-12
+docname: draft-irtf-hrpc-association-13
 category: info
 
 ipr: trust200902
@@ -482,6 +482,8 @@ Introduction
 ~~~
          
 The current draft continues the work started in “Research into Human Rights Protocol Considerations” {{RFC8280}} by investigating the impact of Internet protocols on a specific set of human rights, namely the right to peaceful assembly and the right to association. Taking into consideration the international human rights framework, the present document seeks to deepen the relationship between these human rights and Internet architecture, protocols, and standards. In that way, we continue the work of the Human Rights Protocol Consideration Research Group, as laid out in its charter, “to expose the relation between protocols and human rights, with a focus on the rights to freedom of expression and freedom of assembly” {{HRPC-charter}}.
+
+This document has seen extensive discussion and review in the IRTF Human Rights Protocol Considerations (HRPC) research group and represents the consensus of that group. It is not an IETF product and is not a standard.
 
 Vocabulary used
 ===============
