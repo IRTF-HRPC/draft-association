@@ -64,12 +64,12 @@ informative:
   RFC4880:
   RFC5694:
   RFC5751:
-  RFC6176:
-  RFC7118:
   RFC7194:
   RFC7258:
   RFC7624:
   RFC8280:
+  RFC8825:
+  RFC8828:
   RFC9505:
 
   UDHR:
@@ -248,11 +248,11 @@ informative:
     seriesinfo: "Journal of the Association for Information Systems (10) 5, pp. 306-332"
 
   CRC:
-     title: Lorum
-     date: 2000
+     title: Convention on the Rights of the Child
+     date: 1989
      author:
-      - ins: Wikipedia
-     target: https://www.info.dfat.gov.au/Info/Treaties/treaties.nsf/AllDocIDs/E123F4F71DCAE3E7CA256B4F007F2905 
+      - org: United Nations
+     target: https://www.ohchr.org/en/instruments-mechanisms/instruments/convention-rights-child
      
   CERD:
      title: Convention on the Elimination of all forms of Racial Discrimination
@@ -343,7 +343,7 @@ informative:
      
   UNHRC2020:
      title: Impact of new technologies on the promotion and protection of human rights in the context of assemblies, including peaceful protests. Report of the United Nations High Commissioner for Human Rights A/HRC/44/24, 2020 
-     date: 2000
+     date: 2020
      author:
       - ins: Michelle Bachelet
       - org: United Nations
@@ -400,14 +400,14 @@ informative:
      target: https://www.apc.org/en/node/36145/#tools
      
   UNHRC2018:
-     title: "UN Human Rights Council Resolution 'The promotion, protection and enjoyment of human rights on the Internet' (A/HRC/32/L.20)"
-     date: 2016
+     title: "UN Human Rights Council Resolution 'The promotion, protection and enjoyment of human rights on the Internet' (A/HRC/RES/38/7)"
+     date: 2018
      author:
       - org: United Nations Human Rights Council
      target: https://digitallibrary.un.org/record/1639840?ln=en
      
   UNGC37:
-     title: "Human Rights Committee “General comment No. 37 (2020) on the right of peaceful assembly (article 21)”, CCPR/C/GC/3"
+     title: "Human Rights Committee “General comment No. 37 (2020) on the right of peaceful assembly (article 21)”, CCPR/C/GC/37"
      date: 2020
      author:
       - org: United Nations Human Rights Committee
@@ -420,13 +420,6 @@ informative:
       - ins: Maina Kiai
       - org: United Nations
      target: http://freeassembly.net/wp-content/uploads/2013/10/A-HRC-20-27_en-annual-report-May-2012.pdf
-     
-  FoAdef:
-     title: Freedom of association
-     date: 2021
-     author:
-       - org: Wikipedia
-     target: https://en.wikipedia.org/wiki/Freedom_of_association
      
   RutzenZenn:
      title: Association and Assembly in the Digital Age
@@ -529,7 +522,7 @@ Right to peaceful assembly
 : "The right of peaceful assembly protects the non-violent gathering by persons for specific purposes, principally expressive ones. It constitutes an individual right that is exercised collectively. Inherent to the right is thus an associative element." {{UNGC37}}
 
 Right to association
-: 'The right and freedom of association encompasses both an individual's right to join or leave groups voluntarily, the right of the group to take collective action to pursue the interests of its members, and the right of an association to accept or decline membership based on certain criteria.' {{FoAdef}}
+: The right of everyone to form and join associations, including trade unions {{ICCPR}}, and not to be compelled to belong to one {{UDHR}}. It protects individuals in joining or leaving groups, and groups in governing themselves, including by deciding on their own membership {{Stanford}}. An association is "any groups of individuals or any legal entities brought together in order to collectively act, express, promote, pursue or defend a field of common interests" {{UNSRFOAA2012}}.
 
 
 Research question
@@ -742,7 +735,7 @@ For the purposes of civic participation and freedom of association and assembly 
 
 ### WebRTC
 
-Multi-party video conferencing protocols like WebRTC {{RFC6176}} {{RFC7118}} allow for robust, bandwidth-adaptive, wideband and super-wideband video and audio discussions in groups. This facilitates exchanges over the Internet in a similar manner to IRC, but including the usage of audio and video. WebRTC can be configured as direct peer-to-peer videochat without sending data through a central server. This ability to function without a central server is a strong facilitator of freedom of association and assembly. 
+Multi-party video conferencing protocols like WebRTC {{RFC8825}} allow for robust, bandwidth-adaptive, wideband and super-wideband video and audio discussions in groups. This facilitates exchanges over the Internet in a similar manner to IRC, but including the usage of audio and video. WebRTC can be configured as direct peer-to-peer videochat without sending data through a central server. This ability to function without a central server is a strong facilitator of freedom of association and assembly. 
 
 However, WebRTC comes with many different configuration options, which can leave users open to unexpected privacy leakages:
 
@@ -761,7 +754,7 @@ However, WebRTC comes with many different configuration options, which can leave
 
 {{AndersonGuarnieri}}
 
-Even though some multi-party video conferencing tools facilitate freedom of assembly and association, their own configuration might pose concrete risks for those who use them. On the one hand WebRTC is providing resilient channels of communications, but on the other hand it also exposes information about those who are using the tool which might lead to increased surveillance, identification and the consequences that might be derived from that. This is especially concerning because the usage of a VPN does not protect against the exposure of IP addresses {{Crawford}}.
+Even though some multi-party video conferencing tools facilitate freedom of assembly and association, their own configuration might pose concrete risks for those who use them. On the one hand WebRTC is providing resilient channels of communications, but on the other hand it also exposes information about those who are using the tool which might lead to increased surveillance, identification and the consequences that might be derived from that. This was especially concerning because the usage of a VPN did not protect against the exposure of IP addresses {{Crawford}}. {{RFC8828}} has since addressed this concern: it specifies that by default WebRTC traffic should follow the same route as other web traffic and that only the system's typical public addresses should be visible to the application, in part to protect users who rely on a VPN for anonymity.
 
 The risk of surveillance also exists in offline spaces, but may generally be easier to analyze for the user. Security and privacy expectations of the user could be either improved or made explicit. This in turn would result in a more secure and private exercise of the right to freedom of assembly or association.
 
