@@ -64,6 +64,7 @@ informative:
   RFC4880:
   RFC5694:
   RFC5751:
+  RFC6530:
   RFC7194:
   RFC7258:
   RFC7624:
@@ -621,6 +622,29 @@ informative:
       - org: Office of the United Nations High Commissioner for Human Rights
      target: https://digitallibrary.un.org/record/4031373
 
+  Brunton:
+     title: "Spam: A Shadow History of the Internet"
+     date: 2013
+     author:
+      - ins: F. Brunton
+     seriesinfo: "Cambridge, MA - MIT Press"
+
+  VerkampGupta:
+     title: "Five Incidents, One Theme: Twitter Spam as a Weapon to Drown Voices of Protest"
+     date: 2013
+     author:
+      - ins: J.-P. Verkamp
+      - ins: M. Gupta
+     target: https://www.usenix.org/conference/foci13/workshop-program/presentation/verkamp
+     seriesinfo: "3rd USENIX Workshop on Free and Open Communications on the Internet (FOCI 13)"
+
+  UASG2025:
+     title: "Celebrating 10 Years of the Universal Acceptance Steering Group: UA Readiness in 2025"
+     date: 2025
+     author:
+      - org: Universal Acceptance Steering Group
+     target: https://uasg.tech/wp-content/uploads/2025/06/UASG-10-Year-and-2025-UA-Readiness-Report.pdf
+
 --- abstract
 
 This document explores whether the relationship between the Internet architecture and the ability of people to exercise their rights to peaceful assembly and association online. It does so by asking the question: what are the protocol development considerations for freedom of assembly and association? The Internet increasingly mediates our lives, our relationships, and our ability to exercise our human rights. As a global assemblage, the Internet provides a public space, yet it is predominantly built on private infrastructure. Since Internet protocols and architecture play a central role in the management, development, and use of the Internet, we analyze the relation between protocols, architecture, and the rights to assemble and associate to mitigate infringements on those rights. This document concludes that the way in which infrastructure is designed and implemented impacts people’s ability to exercise their freedom of assembly and association. It is therefore recommended that the potential impacts of Internet technologies should be assessed, reflecting recommendations of various UN bodies and international norms. Finally, the document considers both the limitations on changing association and impact of "forced association" in the context of online platforms.
@@ -864,11 +888,11 @@ In the case of dual-use technologies, where technology could be used for legitim
 
 ### Spam
 
-In the 1990s as the Internet became more widely adopted, spam came to be defined as irrelevant or unsolicited messages that were posted many times to multiple news groups or mailing lists {{Marcus}}. Here questions of consent, but also harm, are crucial. In the 2000s a significant part of the technical and policy debate on spam revolved around the fact that certain corporations considered spam to be a form of "commercial speech", thus encompassed by free expression rights {{Marcus}}. Yet spam can be not only a nuisance, but a threat to systems and users.
+In the 1990s as the Internet became more widely adopted, spam came to be defined as irrelevant or unsolicited messages that were posted many times to multiple news groups or mailing lists {{Marcus}}. Brunton defines spam more broadly as "the use of information technology infrastructure to exploit existing aggregations of human attention" {{Brunton}}. Here questions of consent, but also harm, are crucial. In the 2000s a significant part of the technical and policy debate on spam revolved around the fact that certain corporations considered spam to be a form of "commercial speech", thus encompassed by free expression rights {{Marcus}}. Yet spam can be not only a nuisance, but a threat to systems and users.
 
 This leaves us with an interesting case around spam mitigation: spam is currently handled mostly by mail providers on behalf of the user. Many countries are adopting regulatory opt-in regimes for mailing lists and commercial e-mail, with a possibility of serious fines in case of violation. Yet many ask: is spam not the equivalent of the fliers and handbills ever present in our offline world? The big difference between the proliferation of such messages offline and online is the scale. It is not hard for a single person to message a lot of people online, whereas if that person needed to go house by house the impact of their efforts would be much smaller. Conversely, if it were a common practice to expose people to unlimited unwanted messages online, users would be drowned in such messages. This puts a large burden on filtering, and in sifting through many messages, other expressions would be drowned out and would be severely hampered. Allowing unlimited sending of unsolicited messages would be a blow against freedom of speech: when everyone talks, nobody can hear.
 
-Whereas one could perhaps consider singular instances in which spam could be proportional, legitimate uses of online campaigning, or online protesting, would be drowned out by other spam. Furthermore, the individual receiving the spam never consented to receiving it. Finally, the widespread usage of spam constitutes an attack on the internet infrastructure in terms of mailservers, bandwidth, and inboxes. This in turn thus hamper the freedom of association and assembly that is happening in and is facilitated through the internet infrastructure. Finally, spam leads to spam filtering by users and mail providers on behalf of the user, this in turn might lead to the blocking of messages that a user would consent to, but that get caught in the filter. 
+Whereas one could perhaps consider singular instances in which spam could be proportional, legitimate uses of online campaigning, or online protesting, would be drowned out by other spam. Spam has also been used deliberately for this purpose: during five political events in China, Syria, Russia and Mexico in 2011 and 2012, popular Twitter hashtags were inundated with spam intended to overwhelm the voices of protest {{VerkampGupta}}. Furthermore, the individual receiving the spam never consented to receiving it. Finally, the widespread usage of spam constitutes an attack on the internet infrastructure in terms of mailservers, bandwidth, and inboxes. This in turn thus hamper the freedom of association and assembly that is happening in and is facilitated through the internet infrastructure. Finally, spam leads to spam filtering by users and mail providers on behalf of the user, this in turn might lead to the blocking of messages that a user would consent to, but that get caught in the filter. 
 
 ### DDoS
 
@@ -969,9 +993,9 @@ The W3C has done significant work to ensure that the Web is accessible to people
 
 ### Internationalization
 
-The IETF uses English as its primary working language, both in its documentation and in its communication. This is also the case for reference implementations. It is estimated that roughly 20% of the Earth’s population speaks English, whereas only 360 million speak English as their first language. {{RFC2277}} states that ‘"Internationalization is for humans. This means that protocols are not subject to internationalization; text strings are.", this implies that protocol developers, as well as people that work with protocols, are not people, or that protocol developers all speak English. As a result, it may be significantly easier for people who have a command of the English language to become a protocol developer. It could also lead to a divergence, with the development of separate protocols that are developed within large language communities that don't use English language or Latin script. This makes it harder for people who seek to shape their own space of association and assembly on the Internet to do so. Communities may therefore be driven to rely on proprietary and non-interoperable services, such as Facebook and Weibo, where use of their own script and language is supported.
+The IETF uses English as its primary working language, both in its documentation and in its communication. This is also the case for reference implementations. Yet most of the world’s population does not speak English as a first language. {{RFC2277}} states that "Internationalization is for humans. This means that protocols are not subject to internationalization; text strings are." This implies that protocol developers, as well as people that work with protocols, are not people, or that protocol developers all speak English. As a result, it may be significantly easier for people who have a command of the English language to become a protocol developer. It could also lead to a divergence, with the development of separate protocols that are developed within large language communities that don't use English language or Latin script. This makes it harder for people who seek to shape their own space of association and assembly on the Internet to do so. Communities may therefore be driven to rely on proprietary and non-interoperable services, such as Facebook and Weibo, where use of their own script and language is supported.
 
-When Ramsey Nasser developed the Arabic programming language قلب (transliterated Qalb, Qlb and Alb) {{Nasser}} he called it "engineering performance art" instead of engineering, because he knew that his language would not work. In part this is because historically programming tools used the ASCII character set, which encodes Latin characters and was based on the English language. Though modern tools use Unicode, there persist cultural biases in computer science and engineering down to the level of code. Despite long significant efforts, it is still largely impossible to register an email address in a language such as Devanagari, Arabic, or Chinese. Even where possible, it is to be expected that there will be a significant failure rate in sending and receiving emails to and from other services. This makes it harder for people who do not speak English and/or don’t use the Latin script to exercise their freedom of association and assembly.
+When Ramsey Nasser developed the Arabic programming language قلب (transliterated Qalb, Qlb and Alb) {{Nasser}} he called it "engineering performance art" instead of engineering, because he knew that his language would not work. In part this is because historically programming tools used the ASCII character set, which encodes Latin characters and was based on the English language. Though modern tools use Unicode, there persist cultural biases in computer science and engineering down to the level of code. Internationalized email addresses, which can be written in scripts such as Devanagari, Arabic, or Chinese, have been standardized since 2012 {{RFC6530}}, and some large email services now support sending to and receiving from them. Yet by 2025 only 26.8% of the mail servers listed under generic top-level domains accepted such addresses {{UASG2025}}, so there is still a significant failure rate in sending and receiving emails to and from other services. This makes it harder for people who do not speak English and/or don’t use the Latin script to exercise their freedom of association and assembly.
 
 ## Block Together Now: IRC and Refusals
 
