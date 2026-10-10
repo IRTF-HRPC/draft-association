@@ -645,6 +645,23 @@ informative:
       - org: Universal Acceptance Steering Group
      target: https://uasg.tech/wp-content/uploads/2025/06/UASG-10-Year-and-2025-UA-Readiness-Report.pdf
 
+  Flyvbjerg:
+     title: "Five Misunderstandings About Case-Study Research"
+     date: 2006
+     author:
+      - ins: B. Flyvbjerg
+     target: https://doi.org/10.1177/1077800405284363
+     seriesinfo: "Qualitative Inquiry 12(2): 219-245"
+
+  SeawrightGerring:
+     title: "Case Selection Techniques in Case Study Research: A Menu of Qualitative and Quantitative Options"
+     date: 2008
+     author:
+      - ins: J. Seawright
+      - ins: J. Gerring
+     target: https://doi.org/10.1177/1065912907313077
+     seriesinfo: "Political Research Quarterly 61(2): 294-308"
+
 --- abstract
 
 This document explores whether the relationship between the Internet architecture and the ability of people to exercise their rights to peaceful assembly and association online. It does so by asking the question: what are the protocol development considerations for freedom of assembly and association? The Internet increasingly mediates our lives, our relationships, and our ability to exercise our human rights. As a global assemblage, the Internet provides a public space, yet it is predominantly built on private infrastructure. Since Internet protocols and architecture play a central role in the management, development, and use of the Internet, we analyze the relation between protocols, architecture, and the rights to assemble and associate to mitigate infringements on those rights. This document concludes that the way in which infrastructure is designed and implemented impacts people’s ability to exercise their freedom of assembly and association. It is therefore recommended that the potential impacts of Internet technologies should be assessed, reflecting recommendations of various UN bodies and international norms. Finally, the document considers both the limitations on changing association and impact of "forced association" in the context of online platforms.
@@ -742,7 +759,7 @@ We identified literature in three ways. First we searched the titles and abstrac
 
 ## Case selection {#case-selection}
 
-We selected cases to illustrate how protocol design bears on freedom of association and assembly, not to provide a statistically representative sample. Each case is a protocol, or a family of protocols, that meets three criteria:
+The case selection is based on an information-oriented selection logic {{Flyvbjerg}}: cases were chosen for what they reveal about the five questions derived from the literature review. Following Seawright and Gerring {{SeawrightGerring}}, the selection combines typical cases (email, mailing lists, IRC), diverse cases that vary across layers of the stack and in whether they enable or inhibit association (WebRTC, peer-to-peer, the Web), and extreme cases (spam, DDoS) that probe where the right to association and assembly ends. Each case is a protocol, or a family of protocols, that meets three criteria:
 
 1. It speaks to at least one of the questions raised in the literature review. Each section of the analysis opens with the question it addresses, and each question is addressed by at least one case.
 
