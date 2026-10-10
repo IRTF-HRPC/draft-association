@@ -535,6 +535,10 @@ Methodology
 
 In this document, we deepen our exploration of human rights and protocols by assessing one specific set of human rights: freedom of association and assembly, abbreviated here as FAA. Our methodology for doing so is the following: first, we provide a brief twofold literature review addressing the philosophical and legal definitions of FAA and how this right has already been interpreted or analyzed in the digital context. This literature review is not exhaustive but aims at providing some lines of questioning that could later be used for protocol development. Second, we look at some cases of Internet protocols that are relevant to the sub-questions highlighted in the literature review and analyze how these protocols facilitate or inhibit the right to peaceful assembly and association.
 
+## Literature selection {#literature-selection}
+
+We identified literature in three ways. First we searched the titles and abstracts of works in OpenAlex, a cross-disciplinary index of scholarly literature, using queries that pair a rights concept (freedom of association or assembly, protest, civic space, collective action, group privacy, moderation and exclusion) with a technology concept (the Internet, protocols, encryption, decentralized and federated networks, shutdowns, surveillance, spam and denial of service). Second we followed the references of these key works. Third we searched the RFC series and documents of United Nations human rights bodies. Candidate works were screened by title and abstract through October 2026. The review is not exhaustive; it aims to represent the main strands of literature relevant to protocol design.
+
 ## Case selection {#case-selection}
 
 We selected cases to illustrate how protocol design bears on freedom of association and assembly, not to provide a statistically representative sample. Each case is a protocol, or a family of protocols, that meets three criteria:
