@@ -67,7 +67,10 @@ informative:
   RFC6176:
   RFC7118:
   RFC7194:
+  RFC7258:
+  RFC7624:
   RFC8280:
+  RFC9505:
 
   UDHR:
     title: The Universal Declaration of Human Rights
@@ -539,6 +542,20 @@ Methodology
 
 In this document, we deepen our exploration of human rights and protocols by assessing one specific set of human rights: freedom of association and assembly, abbreviated here as FAA. Our methodology for doing so is the following: first, we provide a brief twofold literature review addressing the philosophical and legal definitions of FAA and how this right has already been interpreted or analyzed in the digital context. This literature review is not exhaustive but aims at providing some lines of questioning that could later be used for protocol development. Second, we look at some cases of Internet protocols that are relevant to the sub-questions highlighted in the literature review and analyze how these protocols facilitate or inhibit the right to peaceful assembly and association.
 
+## Case selection {#case-selection}
+
+We selected cases to illustrate how protocol design bears on freedom of association and assembly, not to provide a statistically representative sample. Each case is a protocol, or a family of protocols, that meets three criteria:
+
+1. It speaks to at least one of the questions raised in the literature review. Each section of the analysis opens with the question it addresses, and each question is addressed by at least one case.
+
+2. It is specified in IETF RFCs or W3C Recommendations, or it is widely deployed on the Internet, so that the design choices we discuss can be traced to specifications that protocol developers can read and change.
+
+3. It is either a medium that people use to associate and assemble (email, mailing lists, IRC, WebRTC, peer-to-peer networks, the Web), or a phenomenon that the literature identifies as a contested form of assembly or as an interference with it (spam and DDoS).
+
+We favored long-lived protocols with a documented history of use, because they allow us to observe how design choices have played out for groups over time. Some protocols appear in more than one section, because a single protocol can bear on more than one question.
+
+Some topics raised in the literature are not treated as cases. {{RFC8280}} already analyzes the DNS and middleboxes, and we do not repeat that analysis here. Network shutdowns, surveillance, and the tools used to resist them are documented in depth elsewhere, including in the survey of censorship techniques in {{RFC9505}} and the treatment of pervasive monitoring in {{RFC7258}} and {{RFC7624}}. These practices affect all uses of the Internet, and their effect on association follows from their effect on connectivity and confidentiality in general; they are less directly in scope for a document about how protocols shape the ways people associate and assemble online. Proprietary social media platforms host much online association today, but even though they could be built on open social web protocols, most currently are not and they do not interoperate or enable data portability. These topics are directions for future research, and we return to them in the conclusions. The cases are therefore not exhaustive, and the conclusions should be read as drawn from these cases rather than as a general account of the Internet.
+
 
 Literature Review
 =================
@@ -632,11 +649,19 @@ In the following sections we attempt to answer these questions with specific exa
 Analysis
 ========
 
-As the Internet mediates collective action and collaboration, it impacts on freedom of association and assembly. To answer our research question regarding how Internet architecture enables and/or inhibits such human rights, we researched several independent and typical cases related to protocols that have been either adopted by the IETF, or are widely used on the Internet. Our goal is to determine how they facilitate freedom of assembly and association, or how they inhibit it through their design or implementation.
+As the Internet mediates collective action and collaboration, it impacts on freedom of association and assembly. To answer our research question regarding how Internet architecture enables and/or inhibits such human rights, we researched several cases related to protocols that have been either adopted by the IETF, or are widely used on the Internet. Our goal is to determine how they facilitate freedom of assembly and association, or how they inhibit it through their design or implementation.
 
 We are aware that some of the following examples go beyond the use of Internet protocols and flow over into the application layer or examples in the offline world whereas the purpose of the current document is to break down the relationship between Internet protocols and the right to freedom of assembly and association. In some cases the line between protocols and applications, implementations, policies and offline realities are blurred and hard - if not impossible - to differentiate.
 
-We use the literature review to guide our process of inquiry for each case, and to dive deeper in what can be found interesting about each case as it relates to freedom of association. In each section, we consider one of the questions identified in the review, and apply the protocol or application (with some overlaps) to that question.
+The cases were selected according to the criteria in {{case-selection}}. Each section below considers one of the questions identified in the literature review and examines the protocols or applications (with some overlaps) that bear on it:
+
+| Question from the literature review | Section and cases |
+|---|---|
+| Q1: Legitimate limitations on association | Got No Peace: spam and DDoS |
+| Q2: Agency of membership | Holistic Agency: mailing lists |
+| Q3: Features that enable FAA | Civics in Cyberspace: email, mailing lists, IRC, WebRTC, peer-to-peer networking |
+| Q4: Usable and accessible technologies | Universal Access: Web accessibility and internationalization |
+| Q5: Legitimate exclusion from an association | Block Together Now: IRC moderation |
 
 ## Got No Peace: Spam and DDoS
     Should protocols be designed to enable legitimate limitations on
@@ -786,9 +811,9 @@ Communities, collaboration and joint action lie at the heart of the Internet. Ev
 
 Given that the Internet itself was originally designed as a medium of communication for machines that share resources with each other as equals {{RFC0903}}, the Internet is now one of the most basic infrastructures for assembly and association. Since Internet protocols and the Internet architecture play a central role in the management, development and use of the Internet, we established the relation between protocols and the right to freedom of assembly and association.
 
-After reviewing several cases representative of FAA considerations inherent in protocols standardized at the IETF, we can conclude that the way in which infrastructure is designed and implemented impacts people's ability to exercise their freedom of assembly and association. This is because different technical designs come with different properties and characteristics. These properties and characteristics on the one hand enable people to assemble and associate, but on the other hand also add limiting, or even potentially endangering, characteristics. More often than not, this depends on the context. A clearly identified group for open communications, where messages are sent in cleartext and where people's persistent identities are visible, can help to facilitate an assembly and build trust, but in other contexts the same configuration could pose a significant danger. Endangering characteristics should be mitigated, or at least clearly communicated to the users of these technologies. It is therefore recommended that the potential impacts of Internet technologies should be assessed, reflecting recommendations of various UN bodies and international norms.
+After reviewing several cases illustrating FAA considerations inherent in protocols standardized at the IETF, we can conclude that the way in which infrastructure is designed and implemented impacts people's ability to exercise their freedom of assembly and association. This is because different technical designs come with different properties and characteristics. These properties and characteristics on the one hand enable people to assemble and associate, but on the other hand also add limiting, or even potentially endangering, characteristics. More often than not, this depends on the context. A clearly identified group for open communications, where messages are sent in cleartext and where people's persistent identities are visible, can help to facilitate an assembly and build trust, but in other contexts the same configuration could pose a significant danger. Endangering characteristics should be mitigated, or at least clearly communicated to the users of these technologies. It is therefore recommended that the potential impacts of Internet technologies should be assessed, reflecting recommendations of various UN bodies and international norms.
 
-Lastly, the increasing shift away from federated and interoperable messaging exchange towards closed platforms with non-interoperable chat and media-sharing functionality have a significant impact on the distributed and open nature of the use of the Internet. Often these platforms are built on open protocols but do not allow for interoperability or data portability. Future research could further investigate how the use of social media platforms has enabled individuals to associate in groups, but at the same time rendered those groups unable to change or transcend platforms, therefore leading to sorts of "bounded association" and "forced association" both of which inhibit people from fully exercising their freedom of assembly and association. 
+Lastly, the increasing shift away from federated and interoperable messaging exchange towards closed platforms with non-interoperable chat and media-sharing functionality have a significant impact on the distributed and open nature of the use of the Internet. Even though these platforms could be built on open social web protocols, most currently are not, and they do not interoperate or enable data portability. Future research could further investigate how the use of social media platforms has enabled individuals to associate in groups, but at the same time rendered those groups unable to change or transcend platforms, therefore leading to sorts of "bounded association" and "forced association" both of which inhibit people from fully exercising their freedom of assembly and association. Future research could also examine more closely how network shutdowns, pervasive surveillance, and the tools used to resist them affect the ability of groups to associate and assemble online, building on existing work such as {{RFC9505}} and {{RFC7624}}.
 
 Acknowledgements
 ================
