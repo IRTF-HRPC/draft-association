@@ -2,8 +2,9 @@
 title: Internet Protocols and the Human Rights to Freedom of Association and Assembly
 
 abbrev: FoA
-docname: draft-irtf-hrpc-association-13
+docname: draft-irtf-hrpc-association-14
 category: info
+submissiontype: IRTF
 
 ipr: trust200902
 area: IRTF
@@ -38,8 +39,8 @@ author:
 -
        ins: M. Knodel
        name: Mallory Knodel
-       organization: Center for Democracy & Technology
-       email: mknodel@cdt.org
+       organization: NYU
+       email: mallory.knodel@nyu.edu
 
 normative:
 
@@ -288,7 +289,7 @@ informative:
       - ins: N.W. Ntesang
       - ins: T.K. White
       - ins: T. Ilori
-     target: https://repository.gchumanrights.org/bitstream/handle/20.500.11825/1582/3.Global%20article%20HRDA_2_2019.pdf?sequence=4&isAllowed=y
+     target: https://repository.gchumanrights.org/handle/20.500.11825/1582
 
   Stanford:
      title: Freedom of Association
@@ -459,28 +460,28 @@ Introduction
 
 ~~~
 
-    We shape our tools and, thereafter, our tools shape us. 
+    We shape our tools and, thereafter, our tools shape us.
 
          - John Culkin (1967)
 
-    Article 21 of the Covenant protects peaceful assemblies wherever 
-    they take place: outdoors, indoors and online; in public and 
+    Article 21 of the Covenant protects peaceful assemblies wherever
+    they take place: outdoors, indoors and online; in public and
     private spaces; or a combination thereof.
 
          - General Comment 37 of the Human Rights Committee (2020)
 
-    In the digital age, the exercise of the rights of peaceful 
-    assembly and association has become largely dependent on business 
-    enterprises, whose legal obligations, policies, technical 
-    standards, financial models and algorithms can affect these 
+    In the digital age, the exercise of the rights of peaceful
+    assembly and association has become largely dependent on business
+    enterprises, whose legal obligations, policies, technical
+    standards, financial models and algorithms can affect these
     freedoms.
 
-         - Annual Report to the UN Human Rights Council by the Special
-         Rapporteur on the rights to freedom of peaceful assembly and 
-         of association (2019).
+         - Annual Report to the UN Human Rights Council by the
+           Special Rapporteur on the rights to freedom of peaceful
+           assembly and of association (2019).
 
 ~~~
-         
+
 The current draft continues the work started in “Research into Human Rights Protocol Considerations” {{RFC8280}} by investigating the impact of Internet protocols on a specific set of human rights, namely the right to peaceful assembly and the right to association. Taking into consideration the international human rights framework, the present document seeks to deepen the relationship between these human rights and Internet architecture, protocols, and standards. In that way, we continue the work of the Human Rights Protocol Consideration Research Group, as laid out in its charter, “to expose the relation between protocols and human rights, with a focus on the rights to freedom of expression and freedom of assembly” {{HRPC-charter}}.
 
 This document has seen extensive discussion and review in the IRTF Human Rights Protocol Considerations (HRPC) research group and represents the consensus of that group. It is not an IETF product and is not a standard.
@@ -611,7 +612,7 @@ Online association and assembly are the starting point of civic mass mobilizatio
 * The impact of middleboxes on the ability of users to connect to the Internet. Lack of connectivity can significantly impact freedom of assembly and association. In particular, if the user cannot retrieve the reason for their inability to connect, there may not be access to due process to dispute the lack of (secure or private) connectivity, either in general or to a specific service.
 
 In June 2020, the United Nations High Commissioner for Human Rights concluded that technologies can be enablers of the exercise of FAA, but technology is also significantly used to interfere with those rights. Specifically, the report mentions network shutdowns and the use of technology to surveil or crack down on protesters, leading to human rights violations. This includes facial recognition technology, among other ways to violate the privacy of people engaged in an assembly or association. The report makes it explicit that companies play a significant role, by developing, providing or selling the technology, but also by directly causing these violations {{UNHRC2020}}.
- 
+
 ## Specific questions raised from the literature review
 
 Here are some questions raised from the literature review that can have implications for protocol design:
@@ -638,21 +639,22 @@ We are aware that some of the following examples go beyond the use of Internet p
 We use the literature review to guide our process of inquiry for each case, and to dive deeper in what can be found interesting about each case as it relates to freedom of association. In each section, we consider one of the questions identified in the review, and apply the protocol or application (with some overlaps) to that question.
 
 ## Got No Peace: Spam and DDoS
-    Should protocols be designed to enable legitimate limitations on 
-    association in the interests of “national security or public safety, 
-    public order (ordre public), the protection of public health or morals 
-    or the protection of the rights and freedoms of others”, as stated in 
-    the ICCPR article 21 {{ICCPR}}? Where in the stack do we care for FAA?
-    
+    Should protocols be designed to enable legitimate limitations on
+    association in the interests of “national security or public safety,
+    public order (ordre public), the protection of public health or
+    morals or the protection of the rights and freedoms of others”, as
+    stated in the ICCPR article 21 {{ICCPR}}? Where in the stack do we
+    care for FAA?
+
 The 2020 report by the United Nations Special Rapporteur on Human Rights {{UNHRC2020}} described how technology is often used to limit freedom of assembly and association, such as through network shutdowns and the surveillance of groups. Because access to the Internet is crucial not only for freedom of association and assembly, but also for the right to development, and the right to freedom of expression and information {{Nyokabi}}, the United Nation Special Rapporteur advises to:
 
-    (b) Avoid resorting to disruptions and shutdowns of Internet or 
-    telecommunications networks at all times and particularly during 
-    assemblies, including those taking place in electoral contexts 
+    (b) Avoid resorting to disruptions and shutdowns of Internet or
+    telecommunications networks at all times and particularly during
+    assemblies, including those taking place in electoral contexts
     and during times of unrest;
 
 Whereas states have an obligation to protect human rights, there has been an increasing call for non-state actors, such as companies, also to respect human rights {{UNGPBHR}}. The UN adopted guiding principles on business and human rights {{UNGPBHR}} and talks within the HRC are ongoing about an international legally binding instrument to regulate the activities of transnational corporations and other business enterprises. This includes a chain-responsibility of actors: not only that the company’s own processes should not negatively impact human rights, but also that the company should also engage in due diligence processes, such as human rights impact assessments. This includes an assessment of whether the products that are sold, or the services that are provided, can be used to engage in human rights violations, or whether human rights violations occur in any stage of the supply chain of the company. If this is the case, measures should be taken to mitigate this.
- 
+
 In the case of dual-use technologies, where technology could be used for legitimate purposes, but could also be used to limit freedom of association or assembly, this obligation might mean that producers or sellers should limit the parties they sell to, or even better, ensure that the illegitimate use of the technology is not technically possible anymore, or made more difficult. 
 
 ### Spam
@@ -671,7 +673,7 @@ Because of the interrelation of technologies, it cannot be said that there is on
 
 ## Holistic Agency: Mailing Lists and Spam
 
-    Can protocols facilitate agency of membership in associations, 
+    Can protocols facilitate agency of membership in associations,
     assemblies and interactions?
 
 ### Mailing lists
@@ -686,7 +688,7 @@ As we mentioned before, there are interesting implications for freedom of associ
 
 ## Civics in Cyberspace: Messaging, Conferencing, and Networking
 
-    What are the features of protocols that enable freedom of 
+    What are the features of protocols that enable freedom of
     association and assembly?
 
 Civic participation is often expressed as the freedom to associate and assemble, along with other enabling rights such as freedom of expression and the right to privacy. Former UN Special Rapporteur David Kaye established a strong relationship between technology that allows anonymity and uses encryption with positive effects on freedom of expression {{Kaye}}. Here we look at messaging, including email, mailing lists and internet relay chat; video conferencing; and peer-to-peer networking protocols to investigate the common features that enable freedom of association and assembly online.
@@ -720,17 +722,17 @@ Multi-party video conferencing protocols like WebRTC {{RFC6176}} {{RFC7118}} all
 However, WebRTC comes with many different configuration options, which can leave users open to unexpected privacy leakages:
 
     ‘The WebRTC protocol was designed to enable responsive real-time
-    communications over the Internet, and is instrumental in 
-    allowing streaming video and conferencing applications to run in 
+    communications over the Internet, and is instrumental in
+    allowing streaming video and conferencing applications to run in
     the browser. In order to easily facilitate direct connections
-    between computers (bypassing the need for a central server to act 
-    as a gatekeeper), WebRTC provides functionality to automatically 
-    collect the local and public IP addresses of Internet users (ICE 
+    between computers (bypassing the need for a central server to act
+    as a gatekeeper), WebRTC provides functionality to automatically
+    collect the local and public IP addresses of Internet users (ICE
     or STUN). These functions do not require consent from the user,
-    and can be instantiated by sites that a user visits without their 
-    awareness. The potential privacy implications of this aspect of 
-    WebRTC are well documented, and certain browsers have provided 
-    options to limit its behavior.’ 
+    and can be instantiated by sites that a user visits without their
+    awareness. The potential privacy implications of this aspect of
+    WebRTC are well documented, and certain browsers have provided
+    options to limit its behavior.’
 
 {{AndersonGuarnieri}}
 
@@ -752,12 +754,12 @@ Whether for resource sharing or data sharing, P2P systems enable freedom of asse
 
 ## Universal Access: The Web
 
-    Does protocol development sufficiently consider usable and accessible 
-    formats and technologies appropriate for persons with different kinds 
+    Does protocol development sufficiently consider usable and accessible
+    formats and technologies appropriate for persons with different kinds
     of abilities?
 
 ### Accessibility
-    
+
 The W3C has done significant work to ensure that the Web is accessible to people with diverse physical abilities {{W3C}}. For example, the implementation of accessibility standards helps people who have issues with seeing or rendering images to understand what the image depicts. Making the Web more accessible for people with diverse physical abilities enables them to exercise their right to online assembly and association. While there are accessibility standards implemented for the Web, this is less the case for the Internet. 
 
 ### Internationalization
@@ -767,10 +769,10 @@ The IETF uses English as its primary working language, both in its documentation
 When Ramsey Nasser developed the Arabic programming language قلب (transliterated Qalb, Qlb and Alb) {{Nasser}} he called it "engineering performance art" instead of engineering, because he knew that his language would not work. In part this is because historically programming tools used the ASCII character set, which encodes Latin characters and was based on the English language. Though modern tools use Unicode, there persist cultural biases in computer science and engineering down to the level of code. Despite long significant efforts, it is still largely impossible to register an email address in a language such as Devanagari, Arabic, or Chinese. Even where possible, it is to be expected that there will be a significant failure rate in sending and receiving emails to and from other services. This makes it harder for people who do not speak English and/or don’t use the Latin script to exercise their freedom of association and assembly.
 
 ## Block Together Now: IRC and Refusals
-    
-    Can a protocol be designed to legitimately exclude someone 
+
+    Can a protocol be designed to legitimately exclude someone
     from an association?
-    
+
 Previously we spoke about the privacy protecting features of IRC that enable freedom of association and assembly, including transport security. But now we turn to the ability to block users and effectively moderate discussions on IRC as a key feature of the technology that enables agency in membership, a key aspect of freedom of association and assembly.
 
 For order to be kept within the IRC network, special classes of users become “operators” and are allowed to perform general maintenance functions on the network: basic network tasks such as disconnecting (temporary or permanently) and reconnecting servers as needed {{RFC2812}}. One of the most controversial powers of operators is the ability to remove a user from the connected network by ‘force’, i.e., operators are able to close the connection between any client and server {{RFC2812}}.
