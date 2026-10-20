@@ -662,6 +662,32 @@ informative:
      target: https://doi.org/10.1177/1065912907313077
      seriesinfo: "Political Research Quarterly 61(2): 294-308"
 
+  Snyder:
+     title: "Literature review as a research methodology: An overview and guidelines"
+     date: 2019
+     author:
+      - ins: H. Snyder
+     target: https://doi.org/10.1016/j.jbusres.2019.07.039
+     seriesinfo: "Journal of Business Research 104: 333-339"
+
+  GreenhalghPeacock:
+     title: "Effectiveness and efficiency of search methods in systematic reviews of complex evidence: audit of primary sources"
+     date: 2005
+     author:
+      - ins: T. Greenhalgh
+      - ins: R. Peacock
+     target: https://doi.org/10.1136/bmj.38636.593461.68
+     seriesinfo: "BMJ 331: 1064-1067"
+
+  Wohlin:
+     title: "Guidelines for snowballing in systematic literature studies and a replication in software engineering"
+     date: 2014
+     author:
+      - ins: C. Wohlin
+     target: https://doi.org/10.1145/2601248.2601268
+     seriesinfo: "Proceedings of the 18th International Conference on Evaluation and Assessment in Software Engineering (EASE '14), Article 38"
+     
+
 --- abstract
 
 This document explores whether the relationship between the Internet architecture and the ability of people to exercise their rights to peaceful assembly and association online. It does so by asking the question: what are the protocol development considerations for freedom of assembly and association? The Internet increasingly mediates our lives, our relationships, and our ability to exercise our human rights. As a global assemblage, the Internet provides a public space, yet it is predominantly built on private infrastructure. Since Internet protocols and architecture play a central role in the management, development, and use of the Internet, we analyze the relation between protocols, architecture, and the rights to assemble and associate to mitigate infringements on those rights. This document concludes that the way in which infrastructure is designed and implemented impacts people’s ability to exercise their freedom of assembly and association. It is therefore recommended that the potential impacts of Internet technologies should be assessed, reflecting recommendations of various UN bodies and international norms. Finally, the document considers both the limitations on changing association and impact of "forced association" in the context of online platforms.
@@ -755,7 +781,7 @@ In this document, we deepen our exploration of human rights and protocols by ass
 
 ## Literature selection {#literature-selection}
 
-We identified literature in three ways. First we searched the titles and abstracts of works in OpenAlex, a cross-disciplinary index of scholarly literature, using queries that pair a rights concept (freedom of association or assembly, protest, civic space, collective action, group privacy, moderation and exclusion) with a technology concept (the Internet, protocols, encryption, decentralized and federated networks, shutdowns, surveillance, spam and denial of service). Second we followed the references of these key works. Third we searched the RFC series and documents of United Nations human rights bodies. Candidate works were screened by title and abstract through October 2026. The review is not exhaustive; it aims to represent the main strands of literature relevant to protocol design.
+We conducted a purposive narrative review {{Snyder}} rather than a systematic one. We started from key works on freedom of association and assembly in international law and on human rights and Internet infrastructure, and followed their references {{GreenhalghPeacock}} {{Wohlin}}. We complemented this with targeted searches of the RFC series and the documents of UN human rights bodies, which are primary sources for the technical and legal sides of the question. Candidate works were screened by title and abstract until October 2026. The review does not claim exhaustiveness; it aims to represent the main strands of literature relevant to protocol design.
 
 ## Case selection {#case-selection}
 
