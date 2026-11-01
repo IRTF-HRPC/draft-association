@@ -61,19 +61,19 @@ informative:
   RFC1958:
   RFC4084:
   RFC4271:
-  RFC4880:
   RFC5694:
-  RFC5751:
   RFC6530:
   RFC7194:
   RFC7258:
   RFC7624:
   RFC8280:
+  RFC8551:
   RFC8890:
   RFC8825:
   RFC8828:
   RFC9420:
   RFC9505:
+  RFC9580:
   RFC9518:
   RFC9620:
   RFC9750:
@@ -677,7 +677,7 @@ informative:
       - ins: T. Greenhalgh
       - ins: R. Peacock
      target: https://doi.org/10.1136/bmj.38636.593461.68
-     seriesinfo: "BMJ 331: 1064-1067"
+     seriesinfo: "BMJ 331: 1064-1065"
 
   Wohlin:
      title: "Guidelines for snowballing in systematic literature studies and a replication in software engineering"
@@ -977,7 +977,7 @@ The archival function of mailing lists allows for posterior accountability and a
 
 The ubiquity and interoperability of email, and by extension mailing lists, provides a low barrier to entry to an inclusive medium.
 
-Association and assembly online can be undermined when right to privacy is at risk. One downside of mailing lists are the privacy and security concerns generally associated with email. End-to-end encryption with OpenPGP {{RFC4880}} and S​/​MIME {{RFC5751}} can keep email communications authenticated and confidential if properly configured, deployed and used, but users often do not have those protections. And with mailing lists, this protection is not typically possible, because with many lists the final recipients are not known to the sender. There have been experimental solutions to address this issue {{Schleuder}}, but this has not been standardized or widely deployed.
+Association and assembly online can be undermined when right to privacy is at risk. One downside of mailing lists are the privacy and security concerns generally associated with email. End-to-end encryption with OpenPGP {{RFC9580}} and S​/​MIME {{RFC8551}} can keep email communications authenticated and confidential if properly configured, deployed and used, but users often do not have those protections. And with mailing lists, this protection is not typically possible, because with many lists the final recipients are not known to the sender. There have been experimental solutions to address this issue {{Schleuder}}, but this has not been standardized or widely deployed.
 
 ### IRC
 
